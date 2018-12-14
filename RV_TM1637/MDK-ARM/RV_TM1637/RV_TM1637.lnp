@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"rv_tm1637\startup_stm32f410rx.o"
+"rv_tm1637\rv_tm1637.o"
+"rv_tm1637\main.o"
+"rv_tm1637\stm32f4xx_it.o"
+"rv_tm1637\stm32f4xx_hal_msp.o"
+"rv_tm1637\stm32f4xx_hal_tim.o"
+"rv_tm1637\stm32f4xx_hal_tim_ex.o"
+"rv_tm1637\stm32f4xx_hal_rcc.o"
+"rv_tm1637\stm32f4xx_hal_rcc_ex.o"
+"rv_tm1637\stm32f4xx_hal_flash.o"
+"rv_tm1637\stm32f4xx_hal_flash_ex.o"
+"rv_tm1637\stm32f4xx_hal_flash_ramfunc.o"
+"rv_tm1637\stm32f4xx_hal_gpio.o"
+"rv_tm1637\stm32f4xx_hal_dma_ex.o"
+"rv_tm1637\stm32f4xx_hal_dma.o"
+"rv_tm1637\stm32f4xx_hal_pwr.o"
+"rv_tm1637\stm32f4xx_hal_pwr_ex.o"
+"rv_tm1637\stm32f4xx_hal_cortex.o"
+"rv_tm1637\stm32f4xx_hal.o"
+"rv_tm1637\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "RV_TM1637\RV_TM1637.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RV_TM1637.map" -o RV_TM1637\RV_TM1637.axf
